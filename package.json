@@ -4,6 +4,9 @@
   "description": "Biblioteca curso js com TDD",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
+    "hey": "echo \"Hey Ho, Let's go!!!\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,6 +18,14 @@
   "bugs": {
     "url": "https://github.com/leobnog/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/leobnog/js-tdd-course#readme"
+  "homepage": "https://github.com/leobnog/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3"
+  }
 }
-
